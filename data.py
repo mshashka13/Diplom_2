@@ -21,3 +21,13 @@ class Orders:
     ORDER_1 = {"ingredients": ["61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f", "61c0c5a71d1f82001bdaaa75"]}
     ORDER_2 = {"ingredients": ["61c0c5a71d1f82001bdaaa6c", "61c0c5a71d1f82001bdaaa79", "61c0c5a71d1f82001bdaaa76"]}
     ORDER_3 = {"ingredients": ["61c0c5a"]}
+
+
+# Сообщения об ошибках:
+class ErrorMessage:
+    INCORRECT_USER_DATA = "email or password are incorrect"
+    MISSING_INGREDIENT_IDS = "Ingredient ids must be provided"
+    USER_ALREADY_EXISTS = "User already exists"
+    MISSING_FIELDS = "Email, password and name are required fields"
+    AUTHORIZATION_REQUIRED = "You should be authorised"
+    EMAIL_ALREADY_EXISTS = "User with such email already exists"

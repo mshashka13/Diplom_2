@@ -9,17 +9,17 @@ from methods.get_orders_specific_user import GetOrdersSpecificUser
 
 
 @pytest.fixture()
-def user():
+def created_user():
     return CreateUser()
 
 
 @pytest.fixture()
-def real_user():
+def authorized_user():
     return AuthorizationUser()
 
 
 @pytest.fixture()
-def update_real_user():
+def update_authorized_user():
     return UpdateUserData()
 
 
