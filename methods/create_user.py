@@ -18,10 +18,7 @@ class CreateUser:
 
     @allure.step('Создать уже зарегистрированного пользователя')
     def create_user_again(self):
-        email = f"{self.create_user()[1]}"
-        password = f"{self.create_user()[2]}"
-        username = f"{self.create_user()[3]}"
-        token = f"{self.create_user()[4]}"
+        _, email, password, username, token = self.create_user()
         payload = {"email": email, "password": password, "name": username}
         response = requests.post(f"{Url.BASE_URL}{Url.CREATE_USER}", data=payload)
         return response, email, password, token
